@@ -11,20 +11,7 @@ char *get_next_line(int fd)
     return (NULL);
 }
 
-void ft_putstr(char *str)
-{
-	int i;
-
-	i = 0;
-	while (str[i])
-	{
-		write(1, &str[i], 1);
-		i++;
-	}
-	return ;
-}
-
-int main(int argc, char **argv)
+/*int main(int argc, char **argv)
 {
 	int fd;
 	char *line;
@@ -40,4 +27,4 @@ int main(int argc, char **argv)
 	free(line);
 	close(fd);
 	return (0);
-}
+}*/
