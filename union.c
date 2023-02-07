@@ -1,3 +1,4 @@
+#include <unistd.h>
 
 int main(int argc, char **argv)
 {
@@ -21,7 +22,7 @@ int main(int argc, char **argv)
             {
                 if (a[(unsigned int)argv[i][j]] == 0)
                 {
-                    write(1, &argv[i][j]);
+                    write(1, &argv[i][j],1);
                     a[(unsigned int)argv[i][j]] = 1;
                 }
                 j++;
